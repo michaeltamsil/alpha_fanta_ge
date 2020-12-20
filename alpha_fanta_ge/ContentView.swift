@@ -9,8 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            TabView {
+                FirstScreenView()
+                    .tabItem({
+                        Text("First")
+                    })
+                    .tag(0)
+                
+                SecondScreenView()
+                    .tabItem({
+                        Text("Second")
+                    })
+                    .tag(1)
+                
+                ThirdScreenView()
+                    .tabItem({
+                        Text("Third")
+                    })
+                    .tag(2)
+            }
+        }
     }
 }
 
