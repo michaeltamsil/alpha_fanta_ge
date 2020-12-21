@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		A992330F258F90FE00107810 /* FirstScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A992330E258F90FE00107810 /* FirstScreenView.swift */; };
 		A9923312258F910B00107810 /* SecondScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9923311258F910B00107810 /* SecondScreenView.swift */; };
 		A9923315258F911A00107810 /* ThirdScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9923314258F911A00107810 /* ThirdScreenView.swift */; };
+		A992331D258FF90C00107810 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A992331C258FF90C00107810 /* Alamofire */; };
+		A9923320259011E100107810 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A992331F259011E100107810 /* extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,7 @@
 		A992330E258F90FE00107810 /* FirstScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenView.swift; sourceTree = "<group>"; };
 		A9923311258F910B00107810 /* SecondScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenView.swift; sourceTree = "<group>"; };
 		A9923314258F911A00107810 /* ThirdScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenView.swift; sourceTree = "<group>"; };
+		A992331F259011E100107810 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A992331D258FF90C00107810 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +73,7 @@
 				A99232FF258F8EAF00107810 /* Assets.xcassets */,
 				A9923304258F8EAF00107810 /* Info.plist */,
 				A9923301258F8EAF00107810 /* Preview Content */,
+				A992331F259011E100107810 /* extensions.swift */,
 			);
 			path = alpha_fanta_ge;
 			sourceTree = "<group>";
@@ -97,6 +102,9 @@
 			dependencies = (
 			);
 			name = alpha_fanta_ge;
+			packageProductDependencies = (
+				A992331C258FF90C00107810 /* Alamofire */,
+			);
 			productName = alpha_fanta_ge;
 			productReference = A99232F8258F8EAE00107810 /* alpha_fanta_ge.app */;
 			productType = "com.apple.product-type.application";
@@ -124,6 +132,9 @@
 				Base,
 			);
 			mainGroup = A99232EF258F8EAE00107810;
+			packageReferences = (
+				A992331B258FF90C00107810 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = A99232F9258F8EAE00107810 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -153,6 +164,7 @@
 				A99232FE258F8EAE00107810 /* ContentView.swift in Sources */,
 				A992330C258F906A00107810 /* StockTimeSeriesModel.swift in Sources */,
 				A9923315258F911A00107810 /* ThirdScreenView.swift in Sources */,
+				A9923320259011E100107810 /* extensions.swift in Sources */,
 				A9923312258F910B00107810 /* SecondScreenView.swift in Sources */,
 				A99232FC258F8EAE00107810 /* alpha_fanta_geApp.swift in Sources */,
 				A992330F258F90FE00107810 /* FirstScreenView.swift in Sources */,
@@ -344,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A992331B258FF90C00107810 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A992331C258FF90C00107810 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A992331B258FF90C00107810 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A99232F0258F8EAE00107810 /* Project object */;
 }
