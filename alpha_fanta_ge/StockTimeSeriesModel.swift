@@ -9,5 +9,16 @@ import Foundation
 
 //API key : NU4Z0XAAWDABL0RI
 
+class StockTimeSeriesModel {
+
+    
+    var open: Float = 0
+    var high: Float = 0
+    var low: Float = 0
+    var close: Float = 0
+    var volume: Int = 0
+    var dateTime: String = ""
+}
+
 
 
