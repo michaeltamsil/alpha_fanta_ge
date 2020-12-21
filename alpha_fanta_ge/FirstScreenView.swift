@@ -16,7 +16,7 @@ import Alamofire
 
 struct FirstScreenView: View {
     
-    @State var search: String = "IBM"
+    @State var search: String = ""
     @State var result: [StockTimeSeriesModel] = []
 
     
